@@ -1,0 +1,49 @@
+/* Project Detail Styles */
+.project-detail {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    background: linear-gradient(90deg ,#a18cd1, #e059ba,#cb65ae);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .project-detail h1 {
+    font-size: 2rem;
+    color: #1d3557;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .project-detail h2 {
+    font-size: 1.5rem;
+    color: #14213d;
+    margin-top: 30px;
+  }
+  
+  .project-detail p {
+    font-size: 1rem;
+    color: #444;
+    margin: 15px 0;
+  }
+  
+  .project-detail img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .code-block {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 20px;
+    border-left: 5px solid #9f45a5;
+  }
+  

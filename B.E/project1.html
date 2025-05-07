@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jerisha Portfolio</title>
+<link rel="stylesheet" href="project1.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="project-detail">
+    <h1>LDR-Based Intrusion Detection System</h1>
+  
+    <h2>Overview</h2>
+    <p>This project uses an LDR to detect light changes and triggers a buzzer and LED if an intrusion is detected.</p>
+  
+    <h2>Circuit Diagram</h2>
+    <img src="a (1).png" alt="LDR Circuit Diagram">
+  
+    <h2>Arduino Code</h2>
+    <div class="code-block">
+      <pre>
+  const int LDR_PIN = A0; // LDR connected to Analog Pin A0
+  const int BUZZER_PIN = 9; // Buzzer connected to Digital Pin 9
+  const int LED_PIN = 10; // LED connected to Digital Pin 10
+  int threshold = 500; // Adjust based on your environment
+  
+  void setup() {
+    pinMode(BUZZER_PIN, OUTPUT);
+    pinMode(LED_PIN, OUTPUT);
+    Serial.begin(9600);
+  }
+  
+  void loop() {
+    int ldrValue = analogRead(LDR_PIN);
+    Serial.println(ldrValue);
+    if (ldrValue < threshold) {
+      digitalWrite(BUZZER_PIN, HIGH);
+      digitalWrite(LED_PIN, HIGH);
+    } else {
+      digitalWrite(BUZZER_PIN, LOW);
+      digitalWrite(LED_PIN, LOW);
+    }
+  }
+      </pre>
+    </div>
+  </div>
+  
